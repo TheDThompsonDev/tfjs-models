@@ -15,6 +15,11 @@ button {
   padding: 15px;
 }
 
+button.active {
+  color: #ffffff;
+  background-color: #ff8300;
+}
+
 button:disabled {
   color: #a0a0a0;
   border-color: #a0a0a0;
@@ -181,3 +186,24 @@ input[type=checkbox] {
 #include-audio-waveform-label {
   font-size: 17px;
 }
+
+body p {
+  font-size: 24px;
+}
+
+#listening {
+  position: fixed;
+bottom:05;
+  right: 5;
+  font-size: 24px;
+  background-color: #ff8300;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+}
+
+#listening.active {
+  display: block;
+}
+

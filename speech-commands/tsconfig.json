@@ -1,13 +1,32 @@
 {
-  "extends": "../tsconfig",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "target": "es5",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "outDir": "./dist",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "alwaysStrict": false,
+    "downlevelIteration": true,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true
+  },
   "include": [
     "src/"
   ],
-  "exclude": [
-    "node_modules/"
-  ],
-  "compilerOptions": {
-    "outDir": "./dist",
-    "downlevelIteration": true
-  }
+  "exclude": ["node_modules/"]
 }
